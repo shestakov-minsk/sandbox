@@ -1,0 +1,39 @@
+.rating {
+    display: inline-block;
+    background-color: black;
+    transform: rotate(180deg);
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    writing-mode: vertical-lr; 
+    font-size: 10vw;   
+    display: inline;
+    color: rgb(109, 87, 15);
+    transition: color 0.1s ease-out;
+    cursor: pointer;
+    transform: rotate(180deg);
+    padding-bottom: 1.5vw;
+}
+
+li:first-child {
+    padding-right: 1.5vw;
+}
+
+li:hover ~ li, li:hover {
+    color: yellow;
+}
+
+li:hover {
+    color: yellow;
+    transform: scale(1.11) rotate(180deg);
+    text-shadow: 2px 2px rgba(248, 62, 6, 0.6);
+}
+ 
